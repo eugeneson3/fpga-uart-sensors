@@ -1,0 +1,11 @@
+src/demux_1x2.v
+src/stopwatch.v
+src/watch.v
+src/ascii_decoder.v
+src/btn_debounce.v
+src/control_unit.v
+src/dht11.v
+src/fnd_controller.v
+src/sr04_controller.v
+src/uart.v
+src/top_watch_stopwatch.v

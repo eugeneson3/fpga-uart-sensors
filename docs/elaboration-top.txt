@@ -1,0 +1,199 @@
+pyslang 12.1.0
+Top top_watch_stopwatch
+Default timescale 1ns/1ps
+Errors 0
+
+src\stopwatch.v:182:21: warning: implicit net 'w_tick_msec' created [-Wimplicit-net]
+        .i_tick    (w_tick_msec),
+                    ^
+  in instance: top_watch_stopwatch.U_STOPWATCH_DATAPATH.U_TICK_GEN_100HZ
+src\stopwatch.v:225:29: warning: comparison of differently signed types ('reg[19:0]' and 'logic signed[31:0]') [-Wsign-compare]
+            if (counter_reg == (F_COUNT - 1)) begin
+                ~~~~~~~~~~~ ^~  ~~~~~~~~~~~
+  in 3 instances, e.g. top_watch_stopwatch.U_STOPWATCH_DATAPATH.U_MSEC_COUNTER
+src\stopwatch.v:256:37: warning: comparison of differently signed types ('reg[6:0]' and 'logic signed[31:0]') [-Wsign-compare]
+                    if (counter_reg == (TIMES - 1)) begin
+                        ~~~~~~~~~~~ ^~  ~~~~~~~~~
+src\watch.v:147:10: warning: input port 'i_count_up' is explicitly connected to nothing [-Wempty-input-connection]
+        .i_count_up(),
+         ^~~~~~~~~~
+src\watch.v:148:10: warning: input port 'i_count_down' is explicitly connected to nothing [-Wempty-input-connection]
+        .i_count_down(),
+         ^~~~~~~~~~~~
+src\watch.v:195:10: warning: output port 'o_tick' is explicitly connected to nothing [-Wempty-output-connection]
+        .o_tick()
+         ^~~~~~
+  in 3 instances, e.g. top_watch_stopwatch.U_WATCH_DATAPATH.U_HOUR_COUNTER
+src\watch.v:264:36: warning: comparison of differently signed types ('reg[4:0]' and 'logic signed[31:0]') [-Wsign-compare]
+                if (reg_time_count == (TIMES - 1)) begin
+                    ~~~~~~~~~~~~~~ ^~  ~~~~~~~~~
+src\control_unit.v:39:9: warning: 'case' missing 'default' label [-Wcase-default]
+        case (c_state)
+        ^~~~
+src\control_unit.v:40:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            NORMAL: begin
+            ^~~~~~
+src\control_unit.v:44:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            HOUR: begin
+            ^~~~
+src\control_unit.v:48:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            MIN: begin
+            ^~~
+src\control_unit.v:52:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            SEC : begin
+            ^~~
+src\control_unit.v:77:9: warning: 'case' missing 'default' label [-Wcase-default]
+        case (c_state)
+        ^~~~
+src\control_unit.v:78:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            NORMAL: begin
+            ^~~~~~
+src\control_unit.v:83:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            HOUR: begin
+            ^~~~
+src\control_unit.v:88:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            MIN: begin
+            ^~~
+src\control_unit.v:93:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            SEC: begin
+            ^~~
+src\control_unit.v:153:7: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+      STOP: begin
+      ^~~~
+src\control_unit.v:167:7: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+      RUN: begin
+      ^~~
+src\control_unit.v:175:7: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+      CLEAR: begin
+      ^~~~~
+src\control_unit.v:179:7: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+      MODE: begin
+      ^~~~
+src\control_unit.v:186:10: warning: no newline at end of file [-Wnewline-eof]
+endmodule
+         ^
+src\dht11.v:194:34: warning: comparison of differently signed types ('reg[6:0]' and 'logic signed[31:0]') [-Wsign-compare]
+        end else if (counter_reg == F_COUNT - 1) begin
+                     ~~~~~~~~~~~ ^~ ~~~~~~~~~~~
+  in instance: top_watch_stopwatch.U_WATCH_FND_CONTROLLER
+src\fnd_controller.v:84:7: warning: output port 'digit_100' has no connection [-Wunconnected-output-port]
+    ) U_DIGIT_SPLITER_MSEC (
+      ^
+  in instance: top_watch_stopwatch.U_WATCH_FND_CONTROLLER
+src\fnd_controller.v:84:7: warning: output port 'digit_1000' has no connection [-Wunconnected-output-port]
+    ) U_DIGIT_SPLITER_MSEC (
+      ^
+  in instance: top_watch_stopwatch.U_WATCH_FND_CONTROLLER
+src\fnd_controller.v:91:7: warning: output port 'digit_100' has no connection [-Wunconnected-output-port]
+    ) U_DIGIT_SPLITER_SEC (
+      ^
+  in instance: top_watch_stopwatch.U_WATCH_FND_CONTROLLER
+src\fnd_controller.v:91:7: warning: output port 'digit_1000' has no connection [-Wunconnected-output-port]
+    ) U_DIGIT_SPLITER_SEC (
+      ^
+  in instance: top_watch_stopwatch.U_WATCH_FND_CONTROLLER
+src\fnd_controller.v:98:7: warning: output port 'digit_100' has no connection [-Wunconnected-output-port]
+    ) U_DIGIT_SPLITER_MIN (
+      ^
+  in instance: top_watch_stopwatch.U_WATCH_FND_CONTROLLER
+src\fnd_controller.v:98:7: warning: output port 'digit_1000' has no connection [-Wunconnected-output-port]
+    ) U_DIGIT_SPLITER_MIN (
+      ^
+  in instance: top_watch_stopwatch.U_WATCH_FND_CONTROLLER
+src\fnd_controller.v:105:7: warning: output port 'digit_100' has no connection [-Wunconnected-output-port]
+    ) U_DIGIT_SPLITER_HOUR (
+      ^
+  in instance: top_watch_stopwatch.U_WATCH_FND_CONTROLLER
+src\fnd_controller.v:105:7: warning: output port 'digit_1000' has no connection [-Wunconnected-output-port]
+    ) U_DIGIT_SPLITER_HOUR (
+      ^
+src\fnd_controller.v:113:16: warning: implicit conversion of port connection expands from 8 to 16 bits [-Wport-width-expand]
+        .ds_in(humidity[15:8]),
+               ^~~~~~~~~~~~~~
+src\fnd_controller.v:125:10: warning: output port 'digit_100' is explicitly connected to nothing [-Wempty-output-connection]
+        .digit_100(),
+         ^~~~~~~~~
+src\fnd_controller.v:126:10: warning: output port 'digit_1000' is explicitly connected to nothing [-Wempty-output-connection]
+        .digit_1000()
+         ^~~~~~~~~~
+src\fnd_controller.v:132:16: warning: implicit conversion of port connection expands from 8 to 16 bits [-Wport-width-expand]
+        .ds_in(temperature[15:8]),
+               ^~~~~~~~~~~~~~~~~
+src\fnd_controller.v:144:10: warning: output port 'digit_100' is explicitly connected to nothing [-Wempty-output-connection]
+        .digit_100(),
+         ^~~~~~~~~
+src\fnd_controller.v:145:10: warning: output port 'digit_1000' is explicitly connected to nothing [-Wempty-output-connection]
+        .digit_1000()
+         ^~~~~~~~~~
+  in 6 instances, e.g. top_watch_stopwatch.U_WATCH_FND_CONTROLLER.U_DIGIT_SPLITER_DISTANCE
+src\fnd_controller.v:362:23: warning: implicit conversion truncates from 32 to 4 bits [-Wwidth-trunc]
+    assign digit_1  = ds_in % 10;
+                    ~ ^~~~~~~~~~
+  in 6 instances, e.g. top_watch_stopwatch.U_WATCH_FND_CONTROLLER.U_DIGIT_SPLITER_DISTANCE
+src\fnd_controller.v:363:23: warning: implicit conversion truncates from 32 to 4 bits [-Wwidth-trunc]
+    assign digit_10 = (ds_in / 10) % 10;
+                    ~ ^~~~~~~~~~~~~~~~~
+  in 6 instances, e.g. top_watch_stopwatch.U_WATCH_FND_CONTROLLER.U_DIGIT_SPLITER_DISTANCE
+src\fnd_controller.v:364:24: warning: implicit conversion truncates from 32 to 4 bits [-Wwidth-trunc]
+    assign digit_100 = (ds_in / 100) % 10;
+                     ~ ^~~~~~~~~~~~~~~~~~
+  in 2 instances, e.g. top_watch_stopwatch.U_WATCH_FND_CONTROLLER.U_DIGIT_SPLITER_HOUR
+src\fnd_controller.v:364:31: warning: arithmetic between operands of different types ('logic[4:0]' and 'int') [-Warith-op-mismatch]
+    assign digit_100 = (ds_in / 100) % 10;
+                        ~~~~~ ^ ~~~
+  in 6 instances, e.g. top_watch_stopwatch.U_WATCH_FND_CONTROLLER.U_DIGIT_SPLITER_DISTANCE
+src\fnd_controller.v:365:25: warning: implicit conversion truncates from 32 to 4 bits [-Wwidth-trunc]
+    assign digit_1000 = (ds_in / 1000) % 10;
+                      ~ ^~~~~~~~~~~~~~~~~~~
+  in 5 instances, e.g. top_watch_stopwatch.U_WATCH_FND_CONTROLLER.U_DIGIT_SPLITER_DISTANCE
+src\fnd_controller.v:365:32: warning: arithmetic between operands of different types ('logic[8:0]' and 'int') [-Warith-op-mismatch]
+    assign digit_1000 = (ds_in / 1000) % 10;
+                         ~~~~~ ^ ~~~~
+src\sr04_controller.v:64:9: warning: 'case' missing 'default' label [-Wcase-default]
+        case (c_state)
+        ^~~~
+src\sr04_controller.v:147:33: warning: comparison of differently signed types ('reg[6:0]' and 'logic signed[31:0]') [-Wsign-compare]
+                if (counter_reg == (F_COUNT - 1)) begin
+                    ~~~~~~~~~~~ ^~  ~~~~~~~~~~~
+src\uart.v:243:9: warning: 'case' missing 'default' label [-Wcase-default]
+        case (c_state)
+        ^~~~
+src\uart.v:328:44: warning: comparison of differently signed types ('reg[9:0]' and 'logic signed[31:0]') [-Wsign-compare]
+    assign counter_next = (counter_current == (tick_count - 1))? 0 : counter_current + 1;
+                           ~~~~~~~~~~~~~~~ ^~  ~~~~~~~~~~~~~~
+src\uart.v:329:43: warning: comparison of differently signed types ('reg[9:0]' and 'logic signed[31:0]') [-Wsign-compare]
+    assign o_baud_tick = (counter_current == (tick_count - 1)) ? 1 : 0;
+                          ~~~~~~~~~~~~~~~ ^~  ~~~~~~~~~~~~~~
+src\top_watch_stopwatch.v:93:10: warning: output port 'tx_done' is explicitly connected to nothing [-Wempty-output-connection]
+        .tx_done  (),
+         ^~~~~~~
+src\top_watch_stopwatch.v:426:27: warning: implicit conversion truncates from 32 to 8 bits [-Wwidth-trunc]
+            digit_ascii = 8'h30 + value;
+                        ~ ^~~~~~~~~~~~~
+src\top_watch_stopwatch.v:426:35: warning: implicit conversion changes signedness from 'integer' to 'logic[31:0]' [-Wsign-conversion]
+            digit_ascii = 8'h30 + value;
+                                ~ ^~~~~
+src\top_watch_stopwatch.v:474:56: warning: implicit conversion changes signedness from 'logic[31:0]' to 'integer' [-Wsign-conversion]
+                            message[5]  <= digit_ascii(temperature[15:8] / 100);
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~
+src\top_watch_stopwatch.v:475:56: warning: implicit conversion changes signedness from 'logic[31:0]' to 'integer' [-Wsign-conversion]
+                            message[6]  <= digit_ascii((temperature[15:8] / 10) % 10);
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src\top_watch_stopwatch.v:476:56: warning: implicit conversion changes signedness from 'logic[31:0]' to 'integer' [-Wsign-conversion]
+                            message[7]  <= digit_ascii(temperature[15:8] % 10);
+                                                       ^~~~~~~~~~~~~~~~~~~~~~
+src\top_watch_stopwatch.v:481:55: warning: implicit conversion changes signedness from 'logic[31:0]' to 'integer' [-Wsign-conversion]
+                            message[4] <= digit_ascii(humidity[15:8] / 10);
+                                                      ^~~~~~~~~~~~~~~~~~~
+src\top_watch_stopwatch.v:482:55: warning: implicit conversion changes signedness from 'logic[31:0]' to 'integer' [-Wsign-conversion]
+                            message[5] <= digit_ascii(humidity[15:8] % 10);
+                                                      ^~~~~~~~~~~~~~~~~~~
+src\top_watch_stopwatch.v:488:55: warning: implicit conversion changes signedness from 'logic[31:0]' to 'integer' [-Wsign-conversion]
+                            message[5] <= digit_ascii((distance > 400) ? 4 : distance / 100);
+                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src\top_watch_stopwatch.v:489:55: warning: implicit conversion changes signedness from 'logic[31:0]' to 'integer' [-Wsign-conversion]
+                            message[6] <= digit_ascii((distance > 400) ? 0 : (distance / 10) % 10);
+                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src\top_watch_stopwatch.v:490:55: warning: implicit conversion changes signedness from 'logic[31:0]' to 'integer' [-Wsign-conversion]
+                            message[7] <= digit_ascii((distance > 400) ? 0 : distance % 10);
+                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
